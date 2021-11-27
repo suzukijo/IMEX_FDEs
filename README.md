@@ -12,6 +12,7 @@ The main features of the presented IMEX approaches are:
 * The singularities nearby the initial time are addressed through Lubich-like corrections
 * A fast inversion scheme is employed to achieve a computational complexity of O(N log N), where N denotes the number of time-steps
 * Currently, the implemented methods support the solution of systems of FDEs with single fractional orders nonlinear force terms
+* The example structures involve only a few steps on domain definition, correction terms, the main solver call, and the right-hand-side definition _see src/Ex3_Case3.m_ 
 
 Users can access the _examples/_ folder for the following working examples:
 
@@ -21,6 +22,9 @@ Users can access the _examples/_ folder for the following working examples:
 
 The implemented solvers and auxiliary functions can be found in the _src/_ folder, which contains the following files:
 
-* __AAA___ - ...
+* __IMEX_I.m__     - First-order IMEX solver for single nonlinear FDE problems
+* __IMEX_II.m__    - Second-order IMEX solver for single nonlinear FDE problems
+* __IMEX_I_A.m__   - First-order IMEX solver for problems involving a nonlinear system of FDEs
+* __IMEX_II_A.m__  - Second-order IMEX solver for problems involving a nonlinear system of FDEs
 
 Feel free to contact Jorge Suzuki at suzukijo@msu.edu if you have any questions.
