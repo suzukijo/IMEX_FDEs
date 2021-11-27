@@ -30,7 +30,7 @@ The implemented solvers and auxiliary functions can be found in the _src/_ folde
 Auxiliary files:
 
 * __sptoeplitz.m__ Sparse Toeplitz allocation: Toby Driscoll (2021). Sparse Toeplitz matrix construction (https://www.mathworks.com/matlabcentral/fileexchange/13353-sparse-toeplitz-matrix-construction), MATLAB Central File Exchange. Retrieved November 27, 2021.
-* __gjquadreal2f1.m__ Gauss-Jacobi quadrature for 2F1 Gauss hypergeometric functions from 
-
+* __gjquadreal2f1.m__ Gauss-Jacobi quadrature for 2F1 Gauss hypergeometric functions from Pearson, J. W. (2009). Computation of hypergeometric functions (Doctoral dissertation, University of Oxford).
+* __qrule.m__ Gauss-Jacobi quadrature from https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/32/versions/1/previews/qrule.m/index.html
 
 Feel free to contact Jorge Suzuki at suzukijo@msu.edu if you have any questions.
