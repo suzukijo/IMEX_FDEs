@@ -90,7 +90,7 @@ if Mlu>0 || Mf>0 || Mu>0 || Me>0
        end
        rhs1(:,k)=Flu(:,k);
    end
-   Wlu = V1\rhs1; % Obtaining correction weights for linear term
+   Wlu = rhs1*inv(V1); % Obtaining correction weights for linear term
    
    %%%% Computing the weights for the force
    V2 = zeros(Mf);
@@ -109,7 +109,7 @@ if Mlu>0 || Mf>0 || Mu>0 || Me>0
        end
        rhs2(:,k)=Force(:,k);
    end
-   Wf = V2\rhs2; % Getting correction weights
+   Wf = rhs2*inv(V2); % Getting correction weights
    
    %%%% Computing the weights for the history 
    V3 = zeros(Mu);
@@ -148,7 +148,7 @@ if Mlu>0 || Mf>0 || Mu>0 || Me>0
        rhs3(:,k) = History(:,k);
 
    end
-   Wu = V3\rhs3; % Correction weights for history term
+   Wu = rhs3*inv(V3); % Correction weights for history term
    
    %%%% Computing the weights for f_(k+1) by extrapolation 
    V4 = zeros(Me);
@@ -165,7 +165,7 @@ if Mlu>0 || Mf>0 || Mu>0 || Me>0
        end
        rhs4(:,k)=F4(:,k);
    end
-   We = V4\rhs4;
+   We = rhs4*inv(V4);
     
    %%%%  computing y_1,y_2,...,y_N
    %%%%  (A-lambda*B)*Y=h^alpha*(B + C)*F + D (Eq 4.1 in Zhou et al.)
