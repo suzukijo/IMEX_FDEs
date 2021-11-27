@@ -27,4 +27,10 @@ The implemented solvers and auxiliary functions can be found in the _src/_ folde
 * __IMEX_I_A.m__   - First-order IMEX solver for problems involving a nonlinear system of FDEs
 * __IMEX_II_A.m__  - Second-order IMEX solver for problems involving a nonlinear system of FDEs
 
+Auxiliary files:
+
+* __sptoeplitz.m__ Sparse Toeplitz allocation: Toby Driscoll (2021). Sparse Toeplitz matrix construction (https://www.mathworks.com/matlabcentral/fileexchange/13353-sparse-toeplitz-matrix-construction), MATLAB Central File Exchange. Retrieved November 27, 2021.
+* __gjquadreal2f1.m__ Gauss-Jacobi quadrature for 2F1 Gauss hypergeometric functions from 
+
+
 Feel free to contact Jorge Suzuki at suzukijo@msu.edu if you have any questions.
