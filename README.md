@@ -1,4 +1,4 @@
-# IMEX_FDEs
+# Implicit-Explicit Time Integration of Nonlinear FDEs
 Implicit-explicit numerical integration scheme for fractional differential equations (FDEs)
 
 This project contains the first and second-order IMEX time-integration approaches for stiff/nonlinear FDEs presented in:
